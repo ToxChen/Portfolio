@@ -1,0 +1,69 @@
+
+extends ./_layout.jade
+
+block content
+  //- HERO
+  .hero
+
+    .portfolio
+      svg#draw(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 640 120', style='enable-background:new 0 0 640 120;', xml:space='preserve')
+        g#P
+          rect.st0(width='14', height='120')
+          circle.st1(cx='59', cy='52', r='52')
+        g#O
+          circle.st0(cx='241', cy='52', r='52')
+        g#R
+          path.st0(d='M458,45c0-24.9-20.1-45-45-45c-3.8,0-7.5,0.5-11,1.4V45v75h42l-17.9-31.9C444.6,82.4,458,65.3,458,45z')
+          g#R-b
+            polygon.st1(points='402,120 444,120 402,45')
+        g#T
+          polygon.st0(points='584,0 584,120 598,120 640,14 640,0')
+
+
+    header#header
+      a(href="#").logo
+        img(src="images/Logo.svg", alt="logo")
+      a(href="https://github.com/ToxChen/About_me/blob/master/README.md" target="_blank").btn.resume
+        span(data-hover="resume") Resume
+
+    .social
+      a(href="https://www.behance.net/azx011014fa1e" target="_blank").behance
+        i.fab.fa-behance
+      a(href="https://dribbble.com/Tox-Chen" target="_blank").dribbble
+        i.fab.fa-dribbble
+      
+    .scroll
+      a(href="javascript:;").arrow
+
+  //- ABOUT
+  #about
+    .about-wrapper
+      .about-img-wrapper.wow.fadeInUp(data-wow-duration="1s")
+        .about-img
+      .about-info.wow.fadeInUp(data-wow-duration="1s" data-wow-delay=".2s")
+        h2 關於我
+        h3 ABOUT
+        .intro
+          p
+            | 哈囉，我是陳建良(JL Chen)。
+            span.education 畢業於朝陽科技大學 - 資訊管理系(數位多媒體組)。
+            span.interest 我喜歡設計、撰寫網頁以及動畫創作。
+            | 認為把腦海中的事物呈現出來是很有成就感的一件事。
+          p 平時喜歡去Behance以及Dribbble觀摩、學習優秀的設計作品。
+          //- a(href="https://github.com/ToxChen/About_me" target="_blank").btn.view
+          //-   span(data-hover="more") more
+  #app
+    ul#works
+      li.work-wrapper(v-for="(item,key) in works")
+        .work-img-wrapper.wow.fadeInUp(data-wow-duration="1s")
+          .work-img(:style="{backgroundImage: `url(${item.img})`}")
+        .work-info.wow.fadeInUp(data-wow-duration="1s" data-wow-delay=".2s")
+          h2 {{item.title}}
+          h3 WORK 0{{key+1}}
+          span {{item.category}}
+          //- p {{item.description}}
+          a(:href="item.link" target="_blank").btn.view
+            span(data-hover="view") view
+
+
+    
