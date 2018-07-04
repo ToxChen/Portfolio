@@ -3,8 +3,10 @@ $(document).ready(function() {
   //網頁載入完畢後body加入Class('show')
   $('body').addClass('show');
 
-  //wow.js
-  new WOW().init();
+  //wow.js在寬度>992px時才觸發
+  if ($(window).width() > 992) {
+		new WOW().init();
+	}
 
   //點擊滑動到特定區塊
   $('.arrow').click(function(e){
