@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="portfolio">
+        <svg id="draw" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 640 120" style="enable-background:new 0 0 640 120;" xml:space="preserve">
+          <g id="P">
+            <rect width="14" height="120" class="st0"></rect>
+            <circle cx="59" cy="52" r="52" class="st1"></circle>
+          </g>
+          <g id="O">
+            <circle cx="241" cy="52" r="52" class="st0"></circle>
+          </g>
+          <g id="R">
+            <path d="M458,45c0-24.9-20.1-45-45-45c-3.8,0-7.5,0.5-11,1.4V45v75h42l-17.9-31.9C444.6,82.4,458,65.3,458,45z" class="st0"></path>
+            <g id="R-b">
+              <polygon points="402,120 444,120 402,45" class="st1"></polygon>
+            </g>
+          </g>
+          <g id="T">
+            <polygon points="584,0 584,120 598,120 640,14 640,0" class="st0"></polygon>
+          </g>
+        </svg>
+      </div>
+      <header id="header"><a href="#" class="logo"><img src="images/Logo.svg" alt="logo"></a><a href="https://github.com/ToxChen/About_me/blob/master/README.md" target="_blank" class="btn resume"><span data-hover="resume">Resume</span></a></header>
+      <div class="social"><a href="https://www.behance.net/azx011014fa1e" target="_blank" class="behance"><i class="fab fa-behance"></i></a><a href="https://dribbble.com/Tox-Chen" target="_blank" class="dribbble"><i class="fab fa-dribbble"></i></a></div>
+      <div class="scroll"><a href="javascript:;" class="arrow"></a></div>
+    </div>
+    <div id="about">
+      <div class="about-wrapper">
+        <div data-wow-duration="1s" class="about-img-wrapper wow fadeInUp">
+          <div class="about-img"></div>
+        </div>
+        <div data-wow-duration="1s" data-wow-delay=".2s" class="about-info wow fadeInUp">
+          <h2>關於我</h2>
+          <h3>ABOUT</h3>
+          <div class="intro">
+            <p>哈囉，我是陳建良(JL Chen)。<span class="education">畢業於朝陽科技大學 - 資訊管理系(數位多媒體組)。</span><span class="interest">我喜歡設計、撰寫網頁以及動畫創作。</span>認為把腦海中的事物呈現出來是很有成就感的一件事。</p>
+            <p>平時喜歡去Behance以及Dribbble觀摩、學習優秀的設計作品。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="app">
+      <ul id="works">
+        <li v-for="(item,key) in works" class="work-wrapper">
+          <div data-wow-duration="1s" class="work-img-wrapper wow fadeInUp">
+            <div :style="{backgroundImage: `url(${item.img})`}" class="work-img"></div>
+          </div>
+          <div data-wow-duration="1s" data-wow-delay=".2s" class="work-info wow fadeInUp">
+            <h2>{{item.title}}</h2>
+            <h3>WORK 0{{key+1}}</h3><span>{{item.category}}</span><a :href="item.link" target="_blank" class="btn view"><span data-hover="view">view</span></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script src="javascripts/vendor.js?1530686116732"></script>
+    <script src="javascripts/all.js?1530686116732"></script>
+  </body>
+</html>
