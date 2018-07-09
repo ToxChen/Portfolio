@@ -45,7 +45,7 @@ var vm = new Vue({
       },
       {
         title: 'Daily UI',
-        category: 'Web、UI Design',
+        category: 'Web、App Design',
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         link: 'https://www.behance.net/azx011014fa1e',
         img: './images/DailyUI.jpg'
