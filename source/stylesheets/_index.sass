@@ -84,16 +84,17 @@ p
   overflow: hidden
 
   .portfolio
-    +size(100%)
+    +size(100%,120px)
+    top: 50%
+    left: 0
     padding: 0 16.66667%
+    transform: translateY(-65%)
     +lg
       overflow: auto
-    #draw
+    .draw
       height: 120px
       width: auto
-      top: 50%
-      left: 0
-      transform: translateY(-65%)
+      cursor: move
       +sm
         height: 136px
       .st0
@@ -155,7 +156,7 @@ p
 
       img
         height: 48px
-        padding: 9px 0
+        padding: 12px 0
         +lg
           height: 30px
           padding: 0
@@ -264,7 +265,7 @@ p
 .show
   .hero
     .portfolio
-      #draw
+      .draw
         #P, #O, #R, #T
           opacity: 1
 
