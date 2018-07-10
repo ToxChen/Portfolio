@@ -3,10 +3,6 @@ $(document).ready(function() {
   //網頁載入完畢後body加入Class('show')
   $('body').addClass('show');
 
-
-  //draggable
-  $( ".draggable" ).draggable();
-
   //wow.js在寬度>992px時才觸發
   if ($(window).width() > 992) {
 		new WOW().init();
