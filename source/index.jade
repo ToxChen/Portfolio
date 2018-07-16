@@ -12,11 +12,11 @@ block content
         g#O
           circle.st0(cx='256', cy='60', r='60')
         g#R
-          path.st1(d='M462,0h-44v88h44c24.3,0,44-19.7,44-44S486.3,0,462,0z')
-          polygon.st0(points='418,0 418,0 418,120 498,120 498,120 		')
+          path.st1(d='M464,0h-44v88h44c24.3,0,44-19.7,44-44S488.3,0,464,0z')
+          polygon.st0(points='420,0 420,0 420,120 500,120 500,120')
         g#T
-          polygon.st1(points='720,0 686,0 686,0 638,0 638,0 604,0 604,40 638,40 638,120 686,120 686,40 720,40 	')
-          rect.st0(x='638', y='40', width='48', height='80')
+          polygon.st0(points='720,0 686,0 686,0 638,0 638,0 604,0 604,40 638,40 638,120 686,120 686,40 720,40 	')
+          rect.st1(x='638', y='40', width='48', height='80')
 
 
 
@@ -37,10 +37,10 @@ block content
 
   //- ABOUT
   #about
-    .about-wrapper
-      .about-img-wrapper.wow.fadeInUp(data-wow-duration="1s")
+    .about-wrapper.wow.fadeInUp(data-wow-duration="1s")
+      .about-img-wrapper
         .about-img
-      .about-info.wow.fadeInUp(data-wow-duration="1s" data-wow-delay=".2s")
+      .about-info
         h2 關於我
         h3 ABOUT
         .intro
@@ -54,10 +54,10 @@ block content
           //-   span(data-hover="more") more
   #app
     ul#works
-      li.work-wrapper(v-for="(item,key) in works")
-        .work-img-wrapper.wow.fadeInUp(data-wow-duration="1s")
+      li.work-wrapper.wow.fadeInUp(v-for="(item,key) in works" data-wow-duration="1s")
+        .work-img-wrapper
           .work-img(:style="{backgroundImage: `url(${item.img})`}")
-        .work-info.wow.fadeInUp(data-wow-duration="1s" data-wow-delay=".2s")
+        .work-info
           h2 {{item.title}}
           h3 WORK 0{{key+1}}
           span {{item.category}}
