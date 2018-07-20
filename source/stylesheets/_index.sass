@@ -1,4 +1,9 @@
 ////////////////////
+// Font
+////////////////////
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css)
+  
+////////////////////
 // Golbel
 //////////////////// 
 html, body
@@ -8,8 +13,8 @@ html, body
   font-size: 16px
   background-color: $lightColor
   color: $darkColor
-  font-family: 'Montserrat', 'Helvetica', 'arial', 'Microsoft JhengHei' ,'微軟正黑體', 'sans-serif'
-
+  //font-family: 'Montserrat', 'Helvetica', 'arial', 'Noto Sans TC','Microsoft JhengHei' ,'微軟正黑體', 'sans-serif'
+  font-family: 'Montserrat', 'Noto Sans TC', 'Microsoft JhengHei'
 body
   overflow-x: hidden
 
@@ -18,7 +23,7 @@ body
 ////////////////////
 h2
   font-size: 42px
-  font-weight: 600
+  font-weight: 500
   margin-bottom: 16px
   +lg
     font-size: 32px
@@ -33,7 +38,8 @@ h3
 
 p
   font-size: 18px
-  font-weight: 500
+  font-weight: 300
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei'
   line-height: 1.75rem
   margin-top: 0
   margin-bottom: 24px
@@ -274,7 +280,7 @@ p
 ////////////////////
 #about
   width: 100%
-  padding: 25vh 12.5% 0
+  padding: 25vh 16.66667% 0
   +lg
     padding: 0 20px
 
@@ -318,18 +324,15 @@ p
           margin-bottom: 16px
           &:last-child
             margin-bottom: 0
-        span
-          display: block
         .interest
           color: $brandColor
-          font-weight: bold
 
 ////////////////////
 // Works
 ////////////////////
 #works
   width: 100%
-  padding: 0 12.5%
+  padding: 0 16.66667%
   +lg
     padding: 0 20px
 
@@ -394,7 +397,7 @@ p
 
       &:hover
         .work-img
-          transform: scale(1.05)
+          transform: scale(1.1)
 
     .work-info
       width: 50%

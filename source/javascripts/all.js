@@ -37,14 +37,14 @@ var vm = new Vue({
   data: {
     works: [
       {
-        title: 'The F2E Design',
+        title: 'The F2E DESIGN',
         category: 'Web Design',
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         link: 'https://www.behance.net/gallery/67447679/THE-F2E-Challenge',
         img: './images/THE-F2E.jpg'
       },
       {
-        title: 'Daily UI',
+        title: 'DAILY UI',
         category: 'Web、App Design',
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         link: 'https://www.behance.net/azx011014fa1e',
@@ -65,8 +65,8 @@ var vm = new Vue({
         img: './images/KaohsiungTravel.png'
       },
       {
-        title: 'YangBo Adventure',
-        category: 'UI Design, 3D Model, Motion Design',
+        title: 'YANGBO ADVENTURE',
+        category: 'UI Design、3D Model、Motion Design',
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         link: 'https://www.behance.net/gallery/67490421/YangBo-Adventure-',
         img: './images/YangBoAdventure.jpg'
