@@ -363,6 +363,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1 ::selection, h2 ::selection, h3 ::selection, h4 ::selection, h5 ::selection, h6 ::selection, ol ::selection, ul ::selection, li ::selection, a ::selection, div ::selection, span ::selection, p ::selection, img ::selection, td ::selection, table ::selection, tbody ::selection, hr ::selection, iframe ::selection, button ::selection, textarea ::selection, select ::selection{
-  background-color: #222021;
+  background-color: $darkColor;
   color: $lightColor;
 }
