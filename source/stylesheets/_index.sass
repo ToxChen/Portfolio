@@ -147,8 +147,8 @@ p
     transition: all 0.3s
     z-index: 15
     +lg
-      height: 44px
-      padding: 7px 16px
+      height: 48px
+      padding: 9px 20px
 
     .logo
       position: absolute
@@ -175,11 +175,9 @@ p
       box-shadow: 0 6px 24px rgba(36,82,216,.25)
       +lg
         width: auto
-        height: 44px
-        line-height: 44px
         top: 0
         right: 0
-        padding: 0 16px
+        padding: 0 20px
 
   .social
     position: fixed
@@ -192,8 +190,8 @@ p
       left: 0
       bottom: 0
       width: 100%
-    +sm
-      //display: none
+      box-shadow: none
+
     a
       display: inline-block
       +size(48px)
@@ -204,10 +202,6 @@ p
       text-align: center
       transition: all 0.3s cubic-bezier(0.2, 0, 0.2, 1)
       overflow: hidden
-      +lg
-        +size(44px)
-        line-height: 44px
-        font-size: 18px
       &:before
         content: ""
         position: absolute
@@ -224,8 +218,6 @@ p
 
       i
         line-height: 48px
-        +lg
-          line-height: 44px
 
     .behance
       border-right: 1px solid rgba(36,46,56,0.15)
@@ -273,14 +265,12 @@ p
     bottom: 6.25vh
     height: 48px
     line-height: 48px
-    padding: 0 16px
+    padding: 0 20px
     background-color: $whiteColor
     box-shadow: 0 2px 16px rgba(36,42,54,.1)
     +lg
       right: 0
       bottom: 0
-      height: 44px
-      line-height: 44px
     span
       &:after
         content: '2018 © "JL CHEN" PORTFOLIO'
@@ -335,7 +325,7 @@ p
   padding: 25vh 0 0
   +lg
     margin-bottom: 120px
-    padding: 25vh 16px 0
+    padding: 25vh 20px 0
 
 
   .about-wrapper
@@ -353,7 +343,7 @@ p
       +lg
         width: 100vw
         height: 75vw
-        margin-left: -16px
+        margin-left: -20px
 
     .about-info
       width: 60%
@@ -362,7 +352,7 @@ p
       text-align: left
       +lg
         width: 100%
-        margin-top: 16px
+        margin-top: 20px
         padding: 0
       h2
         margin-bottom: 6.66667vh
@@ -385,7 +375,7 @@ p
   margin-bottom: 50vh
   +lg
     margin-bottom: 120px
-    padding: 0 16px
+    padding: 0 20px
 
   .work-wrapper
     display: flex
@@ -445,7 +435,7 @@ p
       +lg
         width: 100vw
         height: 75vw
-        margin-left: -16px
+        margin-left: -20px
 
       .work-img
         +size(100%)
@@ -474,4 +464,4 @@ p
 // Contact
 ////////////////////
 .contact-section
-  padding: 0 16px
+  padding: 0 20px
