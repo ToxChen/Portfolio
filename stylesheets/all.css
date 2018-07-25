@@ -577,9 +577,9 @@ p {
   z-index: 2; }
   @media (max-width: 992px) {
     .title-section .title {
-      top: -57px;
-      left: 0;
-      font-size: 24px; } }
+      position: static;
+      margin-left: 20px;
+      margin-bottom: 32px; } }
 
 .about-section {
   width: 100%;
@@ -587,8 +587,8 @@ p {
   padding: 25vh 0 0; }
   @media (max-width: 992px) {
     .about-section {
-      margin-bottom: 120px;
-      padding: 60px 20px 0; } }
+      margin-bottom: 160px;
+      padding: 60px 0 0; } }
   .about-section .about-wrapper {
     display: -ms-flexbox;
     display: flex; }
@@ -603,10 +603,9 @@ p {
       overflow: hidden; }
       @media (max-width: 992px) {
         .about-section .about-wrapper .about-img-wrapper {
-          width: 100vw;
+          width: 100%;
           height: 70vw;
-          padding-right: 0;
-          margin-left: -20px; } }
+          padding-right: 0; } }
       .about-section .about-wrapper .about-img-wrapper .about-img {
         width: 100%;
         height: 100%;
@@ -623,7 +622,7 @@ p {
         .about-section .about-wrapper .about-info {
           width: 100%;
           margin-top: 20px;
-          padding: 0; } }
+          padding: 0 20px; } }
       .about-section .about-wrapper .about-info h2 {
         margin-bottom: 6.6667vh; }
       .about-section .about-wrapper .about-info h3 {
@@ -640,7 +639,7 @@ p {
   margin-bottom: 50vh; }
   @media (max-width: 992px) {
     .work-section {
-      margin-bottom: 120px; } }
+      margin-bottom: 160px; } }
   .work-section .works {
     padding: 0 12.5%; }
     @media (max-width: 992px) {
