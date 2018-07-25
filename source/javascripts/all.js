@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     e.preventDefault();
     $('html,body').animate({
-      scrollTop:$('#works').offset().top
+      scrollTop:$('.work-section').offset().top
     }, 800, 'swing');
 
   });
@@ -21,7 +21,7 @@ $(document).ready(function() {
   //當滑動到特定區塊時加入特定Class
   $(window).scroll(function() {
 
-    if($(window).scrollTop() >= $('#works').offset().top){
+    if($(window).scrollTop() >= $('.work-section').offset().top){
       $('.scroll a').addClass('arrow-top');
     }else{
       $('.scroll a').removeClass('arrow-top');
@@ -37,14 +37,14 @@ var vm = new Vue({
   data: {
     works: [
       {
-        title: 'THE F2E DESIGN',
+        title: 'The F2E Design',
         category: 'Web Design',
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         link: 'https://www.behance.net/gallery/67447679/THE-F2E-Challenge',
         img: './images/THE-F2E.jpg'
       },
       {
-        title: 'DAILY UI',
+        title: 'Daily UI',
         category: 'Web、App Design',
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         link: 'https://www.behance.net/azx011014fa1e',
@@ -65,7 +65,7 @@ var vm = new Vue({
         img: './images/KaohsiungTravel.png'
       },
       {
-        title: 'YANGBO ADVENTURE',
+        title: 'Yangbo Adventure',
         category: 'UI Design、3D Model、Motion Design',
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         link: 'https://www.behance.net/gallery/67490421/YangBo-Adventure-',

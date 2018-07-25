@@ -32,18 +32,13 @@ block content
       a(href="https://dribbble.com/Tox-Chen" target="_blank").dribbble
         i.fab.fa-dribbble
       
-    //- .scroll
-    //-   a(href="javascript:;").arrow
-
-    .copyright
-      span
+    .scroll
+      a(href="javascript:;").arrow
 
   //- ABOUT
   .about-section
     .title-section
-      h2.title
-        span ABOUT
-        span 關於我
+      h2.title MY STORY
     .about-wrapper.wow.fadeIn(data-wow-duration="1s")
       .about-img-wrapper
         .about-img
@@ -58,23 +53,19 @@ block content
 
   #app.work-section
     .title-section
-      h2.title
-        span WORKS
-        span 作品集
+      h2.title WORKS
     ul.works
       li.work-wrapper.wow.fadeIn(v-for="(item,key) in works" data-wow-duration="1s")
         .work-img-wrapper
           .work-img(:style="{backgroundImage: `url(${item.img})`}")
         .work-info
           h2 {{item.title}}
-          h3 WORK 0{{key+1}}
-          span {{item.category}}
+          h3 {{item.category}}
+          //- span WORK 0{{key+1}}
           //- p {{item.description}}
           a(:href="item.link" target="_blank").btn.view
             span(data-hover="view") view
 
   .contact-section
     .title-section
-      h2.title
-        span.en CONTACT
-        span 與我聯絡
+      h2.title CONTACT

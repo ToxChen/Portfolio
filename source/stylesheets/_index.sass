@@ -7,9 +7,9 @@
 // Golbel
 //////////////////// 
 html, body
+  +size(100%)
   margin: 0
   padding: 0
-  +size(100%)
   font-size: 16px
   background-color: $lightColor
   color: $darkColor
@@ -24,16 +24,16 @@ h2
   font-size: 42px
   font-weight: 600
   margin-bottom: 16px
+  text-transform: uppercase
   +lg
-    font-size: 32px
-    margin-top: 32px
-    margin-bottom: 16px
+    font-size: 24px
+    margin-top: 20px
+    margin-bottom: 8px
 
 h3
-  font-size: 18px
+  font-size: 14px
   font-weight: 500
-  +lg
-    font-size: 14px
+  text-transform: uppercase
 
 p
   font-family: 'Noto Sans TC', 'Microsoft JhengHei'
@@ -84,13 +84,12 @@ p
 // Hero
 ////////////////////
 .hero
-  +size(100%)
   z-index: 10
   overflow: hidden
 
   .portfolio
-    +size(100%,100%)
-    padding: 0 16.66667%
+    +size(100%,100vh)
+    padding: 0 16.6667%
     +lg
       overflow: auto
     .draw
@@ -181,16 +180,15 @@ p
 
   .social
     position: fixed
-    left: 6.25%
     bottom: 6.25vh
+    left: 6.25%
     font-size: 0
-    box-shadow: 0 2px 16px rgba(36,42,54,.1)
+    //box-shadow: 0 6px 24px rgba(46,52,74,.1)
     background-color: $whiteColor
     +lg
       left: 0
       bottom: 0
-      width: 100%
-      box-shadow: none
+      display: none
 
     a
       display: inline-block
@@ -224,22 +222,20 @@ p
 
   .scroll
     position: fixed
-    right: 6.25%
     bottom: 6.25vh
+    right: 6.25%
     +lg
       right: 0
       bottom: 0
-    +sm
-      //display: none
+      display: none
 
     .arrow
       display: block
       +size(48px)
       background-color: $whiteColor
-      box-shadow: 0 0 10px rgba(36,42,54,.05)
+      //box-shadow: 0 6px 24px rgba(46,52,74,.1)
+      box-shadow: none
       transition: all 0.3s cubic-bezier(0.2, 0, 0.2, 1)
-      +lg
-        +size(44px)
       &:after
         content: ""
         display: blockblock
@@ -257,29 +253,7 @@ p
         &:after
           transform: translate(-50%,-50%) rotate(180deg)
       &:hover
-        box-shadow: 0 8px 24px rgba(36,42,54,.15)
-
-  .copyright
-    position: fixed
-    right: 6.25%
-    bottom: 6.25vh
-    height: 48px
-    line-height: 48px
-    padding: 0 20px
-    background-color: $whiteColor
-    box-shadow: 0 2px 16px rgba(36,42,54,.1)
-    +lg
-      right: 0
-      bottom: 0
-    span
-      &:after
-        content: '2018 © "JL CHEN" PORTFOLIO'
-        font-size: 14px
-        font-weight: 600
-        color: $darkColor
-      +lg
-        &:after
-          content: '2018 © "JL CHEN"'
+        box-shadow: 0 6px 24px rgba(46,52,74,.2)
 
 .show
   .hero
@@ -295,26 +269,16 @@ p
   .title
     position: absolute
     top: -120px
-    left: 6.25%
+    left: 16.6667%
     font-size: 32px
+    font-weight: 700
     margin: 0
+    color: $darkColor
     z-index: 2
     +lg
-      top: -16px
+      top: -57px
       left: 0
       font-size: 24px
-    span
-      display: block
-      float: left
-      clear: both
-      padding: 2px 8px
-      background-color: $brandColor
-      color: #fff
-      &:first-child
-        margin-bottom: 4px
-        font-weight: 600
-      &:last-child
-        font-weight: 500
 
 ////////////////////
 // About
@@ -325,7 +289,7 @@ p
   padding: 25vh 0 0
   +lg
     margin-bottom: 120px
-    padding: 25vh 20px 0
+    padding: 60px 20px 0
 
 
   .about-wrapper
@@ -334,20 +298,25 @@ p
       flex-direction: column
 
     .about-img-wrapper
-      +size(40%,50vh)
-      background-color: $darkColor
-      background-image: url("../images/photo.jpg")
-      background-size: cover
-      background-position: center center
+      +size(50%,50vh)
+      padding-right: 10%
       overflow: hidden
       +lg
         width: 100vw
-        height: 75vw
+        height: 70vw
+        padding-right: 0
         margin-left: -20px
+      .about-img
+        +size(100%)
+        background-color: $darkColor
+        background-image: url("../images/photo.jpg")
+        background-size: cover
+        background-position: center center
+
 
     .about-info
-      width: 60%
-      padding: 0 16.66667% 0 10%
+      width: 50%
+      padding-right: 16.6667%
       color: $darkColor
       text-align: left
       +lg
@@ -355,7 +324,7 @@ p
         margin-top: 20px
         padding: 0
       h2
-        margin-bottom: 6.66667vh
+        margin-bottom: 6.6667vh
       h3
         position: absolute
         right: 0
@@ -375,17 +344,19 @@ p
   margin-bottom: 50vh
   +lg
     margin-bottom: 120px
-    padding: 0 20px
+  .works
+    padding: 0 12.5%
+    +lg
+      padding: 0 20px
 
   .work-wrapper
     display: flex
     margin-bottom: 25vh
     +lg
-      margin-bottom: 60px
+      margin-bottom: 32px
 
     &:nth-child(odd)
       flex-direction: row
-      padding: 0 12.5%
       +lg
         flex-direction: column
         padding: 0
@@ -399,17 +370,15 @@ p
           padding-left: 0
           text-align: left
 
-        h3
+        >span
           position: absolute
           right: 0
           bottom: 0
           +lg
-            right: auto
             right: 0
 
     &:nth-child(even)
       flex-direction: row-reverse
-      padding: 0 12.5%
       +lg
         flex-direction: column
         padding: 0
@@ -423,10 +392,14 @@ p
           padding-left: 0
           text-align: left
 
-        h3
+        >span
           position: absolute
           bottom: 0
           left: 0
+          +lg
+            left: auto
+            right: 0
+
 
     .work-img-wrapper
       +size(50%,50vh)
@@ -434,7 +407,7 @@ p
       overflow: hidden
       +lg
         width: 100vw
-        height: 75vw
+        height: 70vw
         margin-left: -20px
 
       .work-img
@@ -442,10 +415,12 @@ p
         background-size: cover
         background-position: center center
         transition: all 0.3s cubic-bezier(0.2, 0, 0.2, 1)
+        // -webkit-filter: grayscale(1)
 
       &:hover
         .work-img
           transform: scale(1.1)
+          // -webkit-filter: grayscale(0)
 
     .work-info
       width: 50%
@@ -454,14 +429,18 @@ p
       +lg
         padding-top: 0
 
-      >span
+      >h3
         display: block
         margin-bottom: 24px
-        color: #889098
+        color: #606060
+        +lg
+          margin-bottom: 16px
+
+      >span
         font-size: 14px
+        font-weight: 500
 
 ////////////////////
 // Contact
 ////////////////////
 .contact-section
-  padding: 0 20px
