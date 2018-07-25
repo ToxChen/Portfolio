@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="images/favic.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="stylesheets/all.css">
     <title>Portfolio</title>
@@ -32,11 +32,11 @@
       </div>
       <header id="header"><a href="#" class="logo"><img src="images/Logo.svg" alt="logo"></a><a href="https://github.com/ToxChen/About_me/blob/master/README.md" target="_blank" class="btn resume"><span data-hover="resume" class="en">Resume</span></a></header>
       <div class="social"><a href="https://www.behance.net/azx011014fa1e" target="_blank" class="behance"><i class="fab fa-behance"></i></a><a href="https://dribbble.com/Tox-Chen" target="_blank" class="dribbble"><i class="fab fa-dribbble"></i></a></div>
-      <div class="copyright"><span></span></div>
+      <div class="scroll"><a href="javascript:;" class="arrow"></a></div>
     </div>
     <div class="about-section">
       <div class="title-section">
-        <h2 class="title"><span>ABOUT</span><span>關於我</span></h2>
+        <h2 class="title">MY STORY</h2>
       </div>
       <div data-wow-duration="1s" class="about-wrapper wow fadeIn">
         <div class="about-img-wrapper">
@@ -53,7 +53,7 @@
     </div>
     <div id="app" class="work-section">
       <div class="title-section">
-        <h2 class="title"><span>WORKS</span><span>作品集</span></h2>
+        <h2 class="title">WORKS</h2>
       </div>
       <ul class="works">
         <li v-for="(item,key) in works" data-wow-duration="1s" class="work-wrapper wow fadeIn">
@@ -62,17 +62,17 @@
           </div>
           <div class="work-info">
             <h2>{{item.title}}</h2>
-            <h3>WORK 0{{key+1}}</h3><span>{{item.category}}</span><a :href="item.link" target="_blank" class="btn view"><span data-hover="view">view</span></a>
+            <h3>{{item.category}}</h3><a :href="item.link" target="_blank" class="btn view"><span data-hover="view">view</span></a>
           </div>
         </li>
       </ul>
     </div>
     <div class="contact-section">
       <div class="title-section">
-        <h2 class="title"><span class="en">CONTACT</span><span>與我聯絡</span></h2>
+        <h2 class="title">CONTACT</h2>
       </div>
     </div>
-    <script src="javascripts/vendor.js?1532368349639"></script>
-    <script src="javascripts/all.js?1532368349639"></script>
+    <script src="javascripts/vendor.js?1532522961018"></script>
+    <script src="javascripts/all.js?1532522961018"></script>
   </body>
 </html>
