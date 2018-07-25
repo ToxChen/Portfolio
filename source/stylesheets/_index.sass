@@ -273,9 +273,9 @@ p
     color: $darkColor
     z-index: 2
     +lg
-      top: -57px
-      left: 0
-      font-size: 24px
+      position: static
+      margin-left: 20px
+      margin-bottom: 32px
 
 ////////////////////
 // About
@@ -285,8 +285,8 @@ p
   margin-bottom: 50vh
   padding: 25vh 0 0
   +lg
-    margin-bottom: 120px
-    padding: 60px 20px 0
+    margin-bottom: 160px
+    padding: 60px 0 0
 
 
   .about-wrapper
@@ -299,10 +299,9 @@ p
       padding-right: 10%
       overflow: hidden
       +lg
-        width: 100vw
+        width: 100%
         height: 70vw
         padding-right: 0
-        margin-left: -20px
       .about-img
         +size(100%)
         background-color: $darkColor
@@ -319,7 +318,7 @@ p
       +lg
         width: 100%
         margin-top: 20px
-        padding: 0
+        padding: 0 20px
       h2
         margin-bottom: 6.6667vh
       h3
@@ -340,7 +339,7 @@ p
 .work-section
   margin-bottom: 50vh
   +lg
-    margin-bottom: 120px
+    margin-bottom: 160px
   .works
     padding: 0 12.5%
     +lg
