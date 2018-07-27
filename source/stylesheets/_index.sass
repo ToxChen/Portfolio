@@ -267,15 +267,16 @@ p
     position: absolute
     top: -120px
     left: 16.6667%
-    font-size: 32px
+    font-size: 48px
     font-weight: 700
     margin: 0
     color: $darkColor
     z-index: 2
     +lg
       position: static
+      font-size: 40px
       margin-left: 20px
-      margin-bottom: 32px
+      margin-bottom: 48px
 
 ////////////////////
 // About
@@ -420,7 +421,7 @@ p
 
     .work-info
       width: 50%
-      padding-top: 8.33333vh
+      //padding-top: 8.33333vh
       color: $darkColor
       +lg
         padding-top: 0
@@ -440,3 +441,46 @@ p
 // Contact
 ////////////////////
 .contact-section
+  margin-bottom: 25vh
+  .contact-row
+    padding: 0 16.6667%
+    display: flex
+    flex-wrap: wrap
+    +lg
+      padding: 0 20px
+    .contact-wrapper
+      width: 50%
+      +lg
+        width: 100%
+    .contact-content
+      display: flex
+      align-items: center
+      margin-bottom: 40px
+      +lg
+        justify-content: space-between
+      +sm
+        flex-direction: column
+        align-items: flex-start
+      .lable-name
+        display: inline-block
+        width: 8.3333vw
+        font-weight: 500
+        +lg
+          width: auto
+        +sm
+          margin-bottom: 8px
+      .info
+        font-size: 24px
+        font-weight: 600
+    .social
+      .info
+        display: inline-block
+        color: $darkColor
+        &:first-child
+          margin-right: 24px
+      .social-behance
+        &:hover
+          color: $brandColor
+      .social-dribbble
+        &:hover
+          color: $brandColor
